@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms And Input Tags</title>
+</head>
+
+<body>
+    <h3>HTML forms </h3>
+
+    <form action="backend.php">
+
+        <!-- Input type text -->
+        <!-- Label for  specifies the bound element to its -->
+        <div>
+            <label for="username">Name:</label> <input type="text" name="myname" id="username">
+        </div>
+
+        <br>
+
+        <!-- Input type email -->
+        <div>
+            Email: <input type="email" name="myemail">
+        </div>
+
+        <br>
+
+        <!-- Input type password -->
+        <div>
+            Password: <input type="password" name="Userpassword">
+        </div>
+
+        <br>
+
+        <!-- Input type date -->
+        <div>
+            Date: <input type="date" name="mydate">
+        </div>
+
+        <br>
+
+        <!-- Input type CheckBox -->
+        <div>
+            Are you Eligible: <input type="checkbox" name="myeligibility" checked>
+        </div>
+
+        <br>
+
+        <!-- Input type radio button -->
+        <div>
+            Gender: Male<input type="radio" name="mygender"> Female<input type="radio" name="mygender"> Other<input
+                type="radio" name="mygender">
+        </div>
+
+        <br>
+
+        <!-- Input type Text area -->
+        <div>
+            Write about Yourself: <br> <textarea name="myText" cols="60" rows="10"></textarea>
+        </div>
+
+        <!-- Input type Submit and Reset -->
+        <div>
+            <input type="submit" value="submit">
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+
+</body>
+
+</html>
