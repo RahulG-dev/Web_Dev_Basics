@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions</title>
+
+    <style>
+
+             .box {
+            display: inline-block;
+            border: 3px solid purple;
+            width: 150px;
+            height: 150px;
+            margin: 3px;
+        }
+
+        #box-3 {
+
+            
+            /* Absolute- relative to its parent position Parent of box-3 is body */
+
+        position: absolute;
+        top:119px;
+        left: 80px;
+       
+           
+        }
+        #box-6{
+            /* Relative- relative to its normal position */
+            position: relative;
+            top:50px;
+            left:50px;
+        }
+        .container{
+            border:2px solid red;
+            background-color: khaki;
+            height:600px;
+        }
+      
+        #box-12{
+            /* Fixed- Fixed position relative to the browser window */
+            position:fixed;
+            right:7px;
+        }
+        .container1{
+            border:2px solid green;
+            background-color: lightblue;
+            height:3500px;
+        }
+        #box-15{
+            /* Stickey- If we scroll dawn position  sticks to the window  */
+            position:sticky;
+            top:7px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h3>CSS Positions- Static (default), Absolute, Relative, Fixed, Stickey</h3><br>
+    
+    <h4>Absolute Position - </h4>
+       
+            <div class="box" id="box-1">BOX 1</div>
+            <div class="box" id="box-2">BOX 2</div>
+            <div class="box" id="box-3">BOX 3</div>
+            <div class="box" id="box-4">BOX 4</div>
+
+ 
+<h4>Relative Position -</h4>
+
+    <div class="box" id="box-5">BOX 5</div>
+    <div class="box" id="box-6">BOX 6</div>
+    <div class="box" id="box-7">BOX 7</div>
+    <div class="box" id="box-8">BOX 8</div><br>
+    
+    <h4>Fixed Position -</h4>
+
+<div class="container">
+
+    <div class="box" id="box-9">BOX 9</div>
+    <div class="box" id="box-10">BOX 10</div>
+    <div class="box" id="box-11">BOX 11</div>
+    <div class="box" id="box-12">BOX 12 <br>Chat with us</div>
+</div> <br>
+  
+<h4>Stickey Position-</h4>
+<div class="container1">
+    <div class="box" id="box-13">Box 13</div>
+    <div class="box" id="box-14">Box 14</div>
+    <div class="box" id="box-15">Box 15 </div>
+    <div class="box" id="box-16">Box 16</div>
+
+</div>
+</body>
+
+</html>

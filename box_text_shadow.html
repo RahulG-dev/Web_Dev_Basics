@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+
+        }
+
+        #card-1 {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: aquamarine;
+            /* box shadow: Offset_X Offset_Y Shadow_color */
+            box-shadow: 12px 13px burlywood;
+        }
+
+        #card-2 {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: firebrick;
+            /* box shadow: -(Offset_X) -(Offset_Y) Blur_Radius Shadow_color */
+            box-shadow: -12px -13px 10px greenyellow;
+        }
+
+        #card-3 {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: goldenrod;
+            /* box shadow: -(Offset_X) -(Offset_Y) Blur_radius Spread_radius Shadow_color */
+            box-shadow: 12px 13px 10px 15px cadetblue;
+        }
+        #card-2 h4{
+            /* text shadow: Offset_X Offset_Y Color */
+            text-shadow: 1px 1px 1px whitesmoke;
+        }
+        #card-3 p{
+            /* text shadow: Offset_X Offset_Y Blur_Radius Color */
+            text-shadow: 5px 7px 3px  red;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Box & Text Shadow in CSS</h3>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h4>Card 1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit animi dolor asperiores autem atque
+                repudiandae, voluptas adipisci quod sequi quidem eaque ex ratione molestias quos aspernatur. Nisi
+                quaerat illo debitis maxime et pariatur repudiandae.
+            </p>
+        </div>
+        <div class="card" id="card-2">
+            <h4>Card 2</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus facilis error possimus
+                pariatur consequatur consequuntur aut expedita? Reprehenderit assumenda harum atque quam non pariatur,
+                voluptate soluta debitis maxime sint, ad aliquid neque voluptates!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h4>Card 3</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus facilis error possimus
+                pariatur consequatur consequuntur aut expedita? Reprehenderit assumenda harum atque quam non pariatur,
+                voluptate soluta debitis maxime sint, ad aliquid neque voluptates!</p>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
